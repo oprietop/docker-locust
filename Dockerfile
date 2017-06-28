@@ -8,7 +8,7 @@ RUN apk add --no-cache ca-certificates libstdc++
 RUN apk add --no-cache --virtual .build-dependencies build-base
 
 # Pip stuff
-RUN pip install locustio==0.8a2 influxdb
+RUN pip install locustio==0.8a2 pyzmq influxdb
 
 # Remove unneed packages
 RUN apk del .build-dependencies
